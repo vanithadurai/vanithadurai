@@ -1,0 +1,231 @@
+*{
+    background-color: rgb(241, 234, 239);
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+    
+.header{
+    height: 100vh;
+    width: 100%;
+    background-image: url(pic/assats/v.jpg);
+    background-position:center;
+    background-size: 750px;
+    color: rgb(53, 7, 7);
+    background-repeat: no-repeat;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+    font-weight: bold;
+}
+nav ul li a:hover{
+    color: red;
+    transition: 0.5s;
+}
+.content{
+    position: absolute;
+    top: 40%;
+    left: 20%;
+
+}
+h1{
+    color: rgb(54, 36, 48);
+
+}
+.about{
+background-color: rgb(235, 229, 233);
+width: 100%;
+padding: 100px 0px;
+}
+.main{
+    width: 100px;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-around;
+}
+.about-text h2{
+    font-size: 35px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.about-text h4{
+    font-size: 27px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.about p{
+    color: rgb(232, 240, 240);
+    line-height: 20px;
+    letter-spacing: 1px;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+button{
+    background-color: brown;
+    color: rgb(234, 234, 238);
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 15px;
+    border-radius: 20px;
+}
+.skills{
+    background-color: rgb(241, 234, 239);
+    text-align: center;
+    height: 70vh;
+    width: 100%;
+    display: grid;
+    place-items:center;
+    position: relative;
+    margin: auto;
+
+
+}
+.container {
+    display: flex;
+    gap: 60px;
+    animation: scroll 40s linear infinite;
+    animation: infinite linear scroll 40s;
+}
+.skills h1{
+    color: black;
+}
+.card{
+    border-radius: 30px;
+    min-height: 200px;
+    min-width: 300px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.card:nth-child(odd) {
+    background: linear-gradient(-229deg, rgb(18, 218, 68),rgb(223,42, 187));
+}
+.card:nth-child(even) {
+    background: linear-gradient(-229deg, rgb(33, 87, 204),rgb(255, 230, 0));
+}
+@keyframes scroll{
+   0% {
+    transform: traslateX(0);
+    }
+    100% { 
+    transform: traslateX(calc(-250px *5));
+    }
+    
+}
+.box{
+    height: 100vh;
+    background-color: rgb(241, 234, 239);
+}
+.box h1{
+    color: rgb(9, 10, 10);
+    text-align: center;
+}
+.testimonials {
+    display: flex;
+    min-height: 400px;
+    align-items: center;
+    justify-content: center;
+}
+.test{
+    height: 360px;
+    width: 360px;
+    padding: 20px 30px;
+    background-color: rgb(74, 198, 230);
+    margin: 15px;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+ .box h5{
+    font-size: 30px;
+    margin-bottom: 20px;
+
+ }
+
+ .box p{
+    line-height: 16px;
+    margin-bottom: 20px;
+    font-size: 20px;
+ }
+ .cantact{
+    color:black;
+    background-color: rgb(103, 104, 101);
+    height: 70vh;
+    width: 100%;
+
+}
+
+ .contact-box{
+    display: flex;
+    background-color: rgb(122, 124, 118);
+ }
+ .contact-left{
+    flex-basis: 60%;
+    padding: 40px 60px;
+    background-color: rgb(27, 238, 238);
+
+ }
+ .contact-right{
+    flex-basis: 40%;
+    padding: 40px;
+    background-color: rgb(119, 124, 124);
+
+ }
+ .contact h1 {
+    margin-bottom: 10px;
+    text-align: center;
+
+ }
+ .contact-left input {
+    color: rgb(231, 179, 35);
+ }
+ .input-row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+ }
+ .cantact-left input-group{
+    flex-basis :45%;
+
+ }
+
+ .input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #4b1e1e;
+
+ }
+ textarea{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #b9acb5;
+    color: blue;
+
+ }
+ label{
+    margin-bottom: 5px;
+    display: white;
+    color: black;
+ }
+ tr td :first-child{
+padding-right: 20px;
+padding-bottom: 5px;
+
+ }
